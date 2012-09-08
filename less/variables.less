@@ -29,6 +29,9 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
+@tomatoRed:			#b41d22;
+@tomatoDark:		#bf0202;
+@tomatoLight:		#ff3019;
 
 // Scaffolding
 // -------------------------
@@ -38,7 +41,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @tomatoRed;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -163,10 +166,10 @@
 @navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
-@navbarText:                      #777;
-@navbarLinkColor:                 #777;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
+@navbarText:                      @linkColor;
+@navbarLinkColor:                 @linkColor;
+@navbarLinkColorHover:            @linkColorHover;
+@navbarLinkColorActive:           @linkColorHover;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
